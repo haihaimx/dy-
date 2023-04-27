@@ -22,11 +22,11 @@ mkdir -p /www/wwwroot
 
 cd /www/wwwroot || exit
 
-echo 'Cloning Douyin_TikTok_Download_API.git from Github!'
+echo 'Cloning dy-.git from Github!'
 
-git clone https://github.com/Evil0ctal/Douyin_TikTok_Download_API.git
+git clone https://github.com/haihaimx/dy-.git
 
-cd Douyin_TikTok_Download_API/ || exit
+cd dy-/ || exit
 
 pip install -r requirements.txt
 
@@ -34,7 +34,7 @@ echo 'Please edit config.ini, all input must be numbers!'
 
 python3 config.py
 
-cp /www/wwwroot/Douyin_TikTok_Download_API/daemon/* /etc/systemd/system/
+cp /www/wwwroot/dy-/daemon/* /etc/systemd/system/
 
 read -r -p "Run API or Web? [api/web/all/quit] " input
 case $input in
